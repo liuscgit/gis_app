@@ -1,0 +1,2296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:fadingEdge="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingTop="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingBottom="60.0dip">
+
+            <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1.0dip"
+                android:shrinkColumns="0"
+                android:stretchColumns="0">
+
+                <TableRow
+                    android:id="@+id/qihouRow"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:paddingLeft="1.0dip"
+                    android:paddingTop="1.0dip"
+                    android:paddingRight="1.0dip"
+                    android:paddingBottom="1.0dip">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dip"
+                        android:layout_marginRight="1.0dip"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="17.0dip"
+                        android:text="1、隧道情况:"
+                        android:textColor="#ff333333"
+                        android:textSize="16.0sp" />
+
+                    <EditText
+                        android:id="@+id/qihouEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2"
+                        android:background="#FFFFFF"
+                        android:gravity="center_vertical"
+                        android:textColor="#ff888888"
+                        android:textSize="16sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/suidaomingchengRow"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_marginRight="1.0dip"
+                    android:background="@drawable/shape_et_bottom_line"
+                    android:paddingLeft="1.0dip"
+                    android:paddingTop="1.0dip"
+                    android:paddingRight="1.0dip"
+                    android:paddingBottom="1.0dip">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dip"
+                        android:layout_weight="3"
+                        android:layout_marginRight="1.0dip"
+                        android:background="#FFFFFF"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="9.0dip"
+                        android:singleLine="false"
+                        android:text="隧道名称"
+                        android:textColor="#ff333333"
+                        android:textSize="16.0sp" />
+
+                    <EditText
+                        android:id="@+id/suidaomingchengEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="7"
+                        android:background="#FFFFFF"
+                        android:gravity="center_vertical"
+                        android:textColor="#ff888888"
+                        android:textSize="16sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/qizhizhuanghaoRow"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_marginRight="1.0dip"
+                    android:background="@drawable/shape_et_bottom_line"
+                    android:paddingLeft="1.0dip"
+                    android:paddingRight="1.0dip"
+                    android:paddingBottom="1.0dip">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dip"
+                        android:layout_weight="3"
+                        android:layout_marginRight="1.0dip"
+                        android:background="#FFFFFF"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="9.0dip"
+                        android:singleLine="false"
+                        android:text="初拟起讫桩号"
+                        android:textColor="#ff333333"
+                        android:textSize="16.0sp" />
+
+                    <EditText
+                        android:id="@+id/chunizhuanghaoEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="7"
+                        android:background="#FFFFFF"
+                        android:gravity="center_vertical"
+                        android:textColor="#ff888888"
+                        android:textSize="16sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/jinkouqingkuangRow"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_marginRight="1.0dip"
+                    android:background="@drawable/shape_et_bottom_line"
+                    android:paddingLeft="1.0dip"
+                    android:paddingRight="1.0dip"
+                    android:paddingBottom="1.0dip">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="9.0dip"
+                        android:singleLine="false"
+                        android:text="进口概况"
+                        android:textColor="#ff333333"
+                        android:textSize="16.0sp" />
+
+                    <TableLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="9"
+                        android:shrinkColumns="0"
+                        android:stretchColumns="0">
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_marginLeft="1.0dip"
+                            android:background="@drawable/shape_et_bottom_line">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="40dip"
+                                android:layout_marginRight="1.0dip"
+                                android:layout_weight="2"
+                                android:background="#FFFFFF"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="17.0dip"
+                                android:singleLine="false"
+                                android:text="地理位置"
+                                android:textColor="#ff333333"
+                                android:textSize="16.0sp" />
+
+                            <EditText
+                                android:id="@+id/jinkouweizhiEditText"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="1.0dip"
+                                android:layout_weight="7"
+                                android:background="#FFFFFF"
+                                android:gravity="center_vertical"
+                                android:textColor="#ff888888"
+                                android:textSize="16.0sp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_marginLeft="1.0dip"
+                            android:background="@drawable/shape_et_bottom_line"
+                            android:paddingTop="1.0dip">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="40dip"
+                                android:layout_marginRight="1.0dip"
+                                android:layout_weight="2"
+                                android:background="#FFFFFF"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="17.0dip"
+                                android:singleLine="false"
+                                android:text="交通状况（离可通车公路距离）"
+                                android:textColor="#ff333333"
+                                android:textSize="16.0sp" />
+
+                            <EditText
+                                android:id="@+id/jinkoujiaotongEditText"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="1.0dip"
+                                android:layout_weight="7"
+                                android:background="#FFFFFF"
+                                android:gravity="center_vertical"
+                                android:textColor="#ff888888"
+                                android:textSize="16.0sp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_marginLeft="1.0dip"
+                            android:background="@drawable/shape_et_bottom_line"
+                            android:paddingTop="1.0dip">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="40dip"
+                                android:layout_marginRight="1.0dip"
+                                android:layout_weight="2"
+                                android:background="#FFFFFF"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="17.0dip"
+                                android:singleLine="false"
+                                android:text="人口(稀少/稠密)房屋(平房/楼房)"
+                                android:textColor="#ff333333"
+                                android:textSize="16.0sp" />
+
+                            <EditText
+                                android:id="@+id/jinkourenkouEditText"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="1.0dip"
+                                android:layout_weight="7"
+                                android:background="#FFFFFF"
+                                android:gravity="center_vertical"
+                                android:textColor="#ff888888"
+                                android:textSize="16.0sp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_marginLeft="1.0dip"
+                            android:background="@drawable/shape_et_bottom_line"
+                            android:paddingTop="1.0dip">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="40dip"
+                                android:layout_marginRight="1.0dip"
+                                android:layout_weight="2"
+                                android:background="#FFFFFF"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="17.0dip"
+                                android:singleLine="false"
+                                android:text="重要设施（管道、工矿、学校等）"
+                                android:textColor="#ff333333"
+                                android:textSize="16.0sp" />
+
+                            <EditText
+                                android:id="@+id/jinkousheshiEditText"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="1.0dip"
+                                android:layout_weight="7"
+                                android:background="#FFFFFF"
+                                android:gravity="center_vertical"
+                                android:textColor="#ff888888"
+                                android:textSize="16.0sp" />
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/chukouqingkuangRow"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_marginRight="1.0dip"
+                    android:background="@drawable/shape_et_bottom_line"
+                    android:paddingLeft="1.0dip"
+                    android:paddingRight="1.0dip"
+                    android:paddingBottom="1.0dip">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="9.0dip"
+                        android:singleLine="false"
+                        android:text="出口概况"
+                        android:textColor="#ff333333"
+                        android:textSize="16.0sp" />
+
+                    <TableLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="9"
+                        android:shrinkColumns="0"
+                        android:stretchColumns="0">
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_marginLeft="1.0dip"
+                            android:background="@drawable/shape_et_bottom_line">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="40dip"
+                                android:layout_marginRight="1.0dip"
+                                android:layout_weight="2"
+                                android:background="#FFFFFF"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="17.0dip"
+                                android:singleLine="false"
+                                android:text="地理位置"
+                                android:textColor="#ff333333"
+                                android:textSize="16.0sp" />
+
+                            <EditText
+                                android:id="@+id/chukouweizhiEditText"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="1.0dip"
+                                android:layout_weight="7"
+                                android:background="#FFFFFF"
+                                android:gravity="center_vertical"
+                                android:textColor="#ff888888"
+                                android:textSize="16.0sp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_marginLeft="1.0dip"
+                            android:background="@drawable/shape_et_bottom_line"
+                            android:paddingTop="1.0dip">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="40dip"
+                                android:layout_marginRight="1.0dip"
+                                android:layout_weight="2"
+                                android:background="#FFFFFF"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="17.0dip"
+                                android:singleLine="false"
+                                android:text="交通状况（离可通车公路距离）"
+                                android:textColor="#ff333333"
+                                android:textSize="16.0sp" />
+
+                            <EditText
+                                android:id="@+id/chukoujiaotongEditText"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="1.0dip"
+                                android:layout_weight="7"
+                                android:background="#FFFFFF"
+                                android:gravity="center_vertical"
+                                android:textColor="#ff888888"
+                                android:textSize="16.0sp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_marginLeft="1.0dip"
+                            android:background="@drawable/shape_et_bottom_line"
+                            android:paddingTop="1.0dip">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="40dip"
+                                android:layout_marginRight="1.0dip"
+                                android:layout_weight="2"
+                                android:background="#FFFFFF"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="17.0dip"
+                                android:singleLine="false"
+                                android:text="人口(稀少/稠密)房屋(平房/楼房)"
+                                android:textColor="#ff333333"
+                                android:textSize="16.0sp" />
+
+                            <EditText
+                                android:id="@+id/chukourenkouEditText"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="1.0dip"
+                                android:layout_weight="7"
+                                android:background="#FFFFFF"
+                                android:gravity="center_vertical"
+                                android:textColor="#ff888888"
+                                android:textSize="16.0sp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_marginLeft="1.0dip"
+                            android:background="@drawable/shape_et_bottom_line"
+                            android:paddingTop="1.0dip">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="40dip"
+                                android:layout_marginRight="1.0dip"
+                                android:layout_weight="2"
+                                android:background="#FFFFFF"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="17.0dip"
+                                android:singleLine="false"
+                                android:text="重要设施（管道、工矿、学校等）"
+                                android:textColor="#ff333333"
+                                android:textSize="16.0sp" />
+
+                            <EditText
+                                android:id="@+id/chukousheshiEditText"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="1.0dip"
+                                android:layout_weight="7"
+                                android:background="#FFFFFF"
+                                android:gravity="center_vertical"
+                                android:textColor="#ff888888"
+                                android:textSize="16.0sp" />
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/dongshengaikuangRow"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_marginRight="1.0dip"
+                    android:background="@drawable/shape_et_bottom_line"
+                    android:paddingLeft="1.0dip"
+                    android:paddingRight="1.0dip"
+                    android:paddingBottom="1.0dip">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="9.0dip"
+                        android:singleLine="false"
+                        android:text="洞身概况"
+                        android:textColor="#ff333333"
+                        android:textSize="16.0sp" />
+
+                    <TableLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="9"
+                        android:shrinkColumns="0"
+                        android:stretchColumns="0">
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_marginLeft="1.0dip"
+                            android:background="@drawable/shape_et_bottom_line">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="40dip"
+                                android:layout_marginRight="1.0dip"
+                                android:layout_weight="2"
+                                android:background="#FFFFFF"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="17.0dip"
+                                android:singleLine="false"
+                                android:text="人口(稀少/稠密)房屋(平房/楼房)"
+                                android:textColor="#ff333333"
+                                android:textSize="16.0sp" />
+
+                            <EditText
+                                android:id="@+id/dongshenrenkouEditText"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="1.0dip"
+                                android:layout_weight="7"
+                                android:background="#FFFFFF"
+                                android:gravity="center_vertical"
+                                android:textColor="#ff888888"
+                                android:textSize="16.0sp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_marginLeft="1.0dip"
+                            android:background="@drawable/shape_et_bottom_line"
+                            android:paddingTop="1.0dip">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="40dip"
+                                android:layout_marginRight="1.0dip"
+                                android:layout_weight="2"
+                                android:background="#FFFFFF"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="17.0dip"
+                                android:singleLine="false"
+                                android:text="水库、沟谷、农田"
+                                android:textColor="#ff333333"
+                                android:textSize="16.0sp" />
+
+                            <EditText
+                                android:id="@+id/shuikuEditText"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="1.0dip"
+                                android:layout_weight="7"
+                                android:background="#FFFFFF"
+                                android:gravity="center_vertical"
+                                android:textColor="#ff888888"
+                                android:textSize="16.0sp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_marginLeft="1.0dip"
+                            android:background="@drawable/shape_et_bottom_line"
+                            android:paddingTop="1.0dip">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="40dip"
+                                android:layout_marginRight="1.0dip"
+                                android:layout_weight="2"
+                                android:background="#FFFFFF"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="17.0dip"
+                                android:singleLine="false"
+                                android:text="植被、农作物"
+                                android:textColor="#ff333333"
+                                android:textSize="16.0sp" />
+
+                            <EditText
+                                android:id="@+id/zhibeiEditText"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="1.0dip"
+                                android:layout_weight="7"
+                                android:background="#FFFFFF"
+                                android:gravity="center_vertical"
+                                android:textColor="#ff888888"
+                                android:textSize="16.0sp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_marginLeft="1.0dip"
+                            android:background="@drawable/shape_et_bottom_line"
+                            android:paddingTop="1.0dip">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="40dip"
+                                android:layout_marginRight="1.0dip"
+                                android:layout_weight="2"
+                                android:background="#FFFFFF"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="17.0dip"
+                                android:singleLine="false"
+                                android:text="重要设施（管道、工矿、学校等）"
+                                android:textColor="#ff333333"
+                                android:textSize="16.0sp" />
+
+                            <EditText
+                                android:id="@+id/dongshensheshiEditText"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="1.0dip"
+                                android:layout_weight="7"
+                                android:background="#FFFFFF"
+                                android:gravity="center_vertical"
+                                android:textColor="#ff888888"
+                                android:textSize="16.0sp" />
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/jilu1Row"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:paddingLeft="1.0dip"
+                    android:paddingTop="1.0dip"
+                    android:paddingRight="1.0dip"
+                    android:paddingBottom="1.0dip">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dip"
+                        android:layout_marginRight="1.0dip"
+                        android:layout_weight="2"
+                        android:background="#FFFFFF"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="17.0dip"
+                        android:text="记录:"
+                        android:textColor="#ff333333"
+                        android:textSize="16.0sp" />
+
+                    <EditText
+                        android:id="@+id/jilu1EditText"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="1.0dip"
+                        android:layout_weight="3"
+                        android:background="#FFFFFF"
+                        android:gravity="center_vertical"
+                        android:textColor="#ff888888"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dip"
+                        android:layout_marginRight="1.0dip"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="17.0dip"
+                        android:text="复核:"
+                        android:textColor="#ff333333"
+                        android:textSize="16.0sp" />
+
+                    <EditText
+                        android:id="@+id/fuhe1EditText"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="3"
+                        android:background="#FFFFFF"
+                        android:gravity="center_vertical"
+                        android:textColor="#ff888888"
+                        android:textSize="16sp" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="1.0dip"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:paddingLeft="1.0dip"
+                        android:paddingTop="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_marginRight="1.0dip"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="17.0dip"
+                            android:text="2．地理位置示意图"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/diliweizhiRow"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingTop="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="800dp"
+                            android:foreground="#FFFFFF"
+                            android:background="#FFFFFF"/>
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/jiluRow"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:paddingLeft="1.0dip"
+                        android:paddingTop="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_marginRight="1.0dip"
+                            android:layout_weight="2"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="17.0dip"
+                            android:text="记录:"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <EditText
+                            android:id="@+id/jilu2EditText"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="1.0dip"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_marginRight="1.0dip"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="17.0dip"
+                            android:text="复核:"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <EditText
+                            android:id="@+id/fuhe2EditText"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16sp" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="1.0dip"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:paddingLeft="1.0dip"
+                        android:paddingTop="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_marginRight="1.0dip"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="17.0dip"
+                            android:text="3．隧道平纵示意图"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaopingmianRow"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingTop="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dip"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="17.0dip"
+                            android:text="（1）隧道平面示意图（洞口附近平曲线半径及五大桩桩号，标明初拟洞口位置）"
+                            android:textColor="#ff333333"
+                            android:background="#FFFFFF"
+                            android:textSize="16.0sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaopingmiantuRow"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="400dp"
+                            android:foreground="#FFFFFF"
+                            android:background="#FFFFFF"/>
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaozongmianRow"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dip"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="17.0dip"
+                            android:text="（1）隧道纵面示意图（洞口附近变点桩号、高程及纵坡，标明初拟洞口位置）"
+                            android:textColor="#ff333333"
+                            android:background="#FFFFFF"
+                            android:textSize="16.0sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaozongmiantuRow"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="400dp"
+                            android:foreground="#FFFFFF"
+                            android:background="#FFFFFF"/>
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/jilu3Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:paddingLeft="1.0dip"
+                        android:paddingTop="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_marginRight="1.0dip"
+                            android:layout_weight="2"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="17.0dip"
+                            android:text="记录:"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <EditText
+                            android:id="@+id/jilu3EditText"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="1.0dip"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_marginRight="1.0dip"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="17.0dip"
+                            android:text="复核:"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <EditText
+                            android:id="@+id/fuhe3EditText"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16sp" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="1.0dip"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:id="@+id/suidaojinkouRow"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:paddingLeft="1.0dip"
+                        android:paddingTop="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_marginRight="1.0dip"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="17.0dip"
+                            android:text="4．隧道进口调查"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                    android:id="@+id/suidaojinkoudixing1Row"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_marginRight="1.0dip"
+                    android:background="@drawable/shape_et_bottom_line"
+                    android:paddingLeft="1.0dip"
+                    android:paddingTop="1.0dip"
+                    android:paddingRight="1.0dip">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dip"
+                        android:layout_weight="3"
+                        android:background="#FFFFFF"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="9.0dip"
+                        android:singleLine="false"
+                        android:text="（1）地形、地貌、水土保持与植被情况"
+                        android:textColor="#ff333333"
+                        android:textSize="16.0sp" />
+
+                </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaojinkoudixing2Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <EditText
+                            android:id="@+id/suidaojinkoudixingEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="120dp"
+                            android:layout_weight="7"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaojinkoudizhi1Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="9.0dip"
+                            android:singleLine="false"
+                            android:text="（2）地质概况（岩层、岩性、构造、覆盖层以及不良地质）"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaojinkoudizhi2Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <EditText
+                            android:id="@+id/suidaojinkoudizhiEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="120dp"
+                            android:layout_weight="7"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaojinkoujinchang1Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="9.0dip"
+                            android:singleLine="false"
+                            android:text="（3）进场道路（结线点位置、新改建道路长度、便桥等）"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaojinkoujinchang2Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <EditText
+                            android:id="@+id/suidaojinchangEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="120dp"
+                            android:layout_weight="7"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaojinkouyongshui1Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="9.0dip"
+                            android:singleLine="false"
+                            android:text="（4）施工用水、用电（解决方法、距洞口距离）"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaojinkouyongshui2Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <EditText
+                            android:id="@+id/suidaojinkouyongshuiEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="120dp"
+                            android:layout_weight="7"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaojinkoushigong1Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="9.0dip"
+                            android:singleLine="false"
+                            android:text="（5）施工场地（场地条件、规划临时用地）"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaojinkoushigong2Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <EditText
+                            android:id="@+id/suidaojinkoushigongEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="120dp"
+                            android:layout_weight="7"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaojinkouqizha1Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="9.0dip"
+                            android:singleLine="false"
+                            android:text="（6）弃碴场及弃碴便道（位置、新改建道路长度、便桥等）"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaojinkouqizha2Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <EditText
+                            android:id="@+id/suidaojinkouqizhaEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="120dp"
+                            android:layout_weight="7"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/jilu4Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:paddingLeft="1.0dip"
+                        android:paddingTop="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_marginRight="1.0dip"
+                            android:layout_weight="2"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="17.0dip"
+                            android:text="记录:"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <EditText
+                            android:id="@+id/jilu4EditText"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="1.0dip"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_marginRight="1.0dip"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="17.0dip"
+                            android:text="复核:"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <EditText
+                            android:id="@+id/fuhe4EditText"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16sp" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="1.0dip"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:id="@+id/suidaochukouRow"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:paddingLeft="1.0dip"
+                        android:paddingTop="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_marginRight="1.0dip"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="17.0dip"
+                            android:text="5．隧道出口调查"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaochukoudixing1Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingTop="1.0dip"
+                        android:paddingRight="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="9.0dip"
+                            android:singleLine="false"
+                            android:text="（1）地形、地貌、水土保持与植被情况"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaochukoudixing2Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <EditText
+                            android:id="@+id/suidaochukoudixingEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="120dp"
+                            android:layout_weight="7"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaochukoudizhi1Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="9.0dip"
+                            android:singleLine="false"
+                            android:text="（2）地质概况（岩层、岩性、构造、覆盖层以及不良地质）"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaochukoudizhi2Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <EditText
+                            android:id="@+id/suidaochukoudizhiEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="120dp"
+                            android:layout_weight="7"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaochukoujinchang1Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="9.0dip"
+                            android:singleLine="false"
+                            android:text="（3）进场道路（结线点位置、新改建道路长度、便桥等）"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaochukoujinchang2Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <EditText
+                            android:id="@+id/suidaochukoujinchangEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="120dp"
+                            android:layout_weight="7"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaochukouyongshui1Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="9.0dip"
+                            android:singleLine="false"
+                            android:text="（4）施工用水、用电（解决方法、距洞口距离）"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaochukouyongshui2Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <EditText
+                            android:id="@+id/suidaochukouyongshuiEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="120dp"
+                            android:layout_weight="7"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaochukoushigong1Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="9.0dip"
+                            android:singleLine="false"
+                            android:text="（5）施工场地（场地条件、规划临时用地）"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaochukoushigong2Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <EditText
+                            android:id="@+id/suidaochukoushigongEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="120dp"
+                            android:layout_weight="7"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaochukouqizha1Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="9.0dip"
+                            android:singleLine="false"
+                            android:text="（6）弃碴场及弃碴便道（位置、新改建道路长度、便桥等）"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaochukouqizha2Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <EditText
+                            android:id="@+id/suidaochukouqizhaEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="120dp"
+                            android:layout_weight="7"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/jilu5Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:paddingLeft="1.0dip"
+                        android:paddingTop="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_marginRight="1.0dip"
+                            android:layout_weight="2"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="17.0dip"
+                            android:text="记录:"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <EditText
+                            android:id="@+id/jilu5EditText"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="1.0dip"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_marginRight="1.0dip"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="17.0dip"
+                            android:text="复核:"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <EditText
+                            android:id="@+id/fuhe5EditText"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16sp" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="1.0dip"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:id="@+id/suidaodongshenRow"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:paddingLeft="1.0dip"
+                        android:paddingTop="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_marginRight="1.0dip"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="17.0dip"
+                            android:text="6．洞身工程及水文地质调查"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaodongshengaikuang1Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingTop="1.0dip"
+                        android:paddingRight="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="9.0dip"
+                            android:singleLine="false"
+                            android:text="（1）工程地质及水文地质概况"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaodongshengaikuang2Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <EditText
+                            android:id="@+id/suidaodongshengaikuangEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="120dp"
+                            android:layout_weight="7"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaodongshenxianxiang1Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="9.0dip"
+                            android:singleLine="false"
+                            android:text="（2）工程地质问题及不良地质现象（覆盖层、滑坡、岩溶、瓦斯、断层、危岩等）"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaodongshenxianxiang2Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <EditText
+                            android:id="@+id/suidaodongshenxianxiangEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="120dp"
+                            android:layout_weight="7"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaodongshenjianyi1Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="9.0dip"
+                            android:singleLine="false"
+                            android:text="（3）地质勘探的重点及钻孔建议和目的"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/suidaodongshenjianyi2Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <EditText
+                            android:id="@+id/suidaodongshenjianyiEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="120dp"
+                            android:layout_weight="7"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/jilu6Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:paddingLeft="1.0dip"
+                        android:paddingTop="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_marginRight="1.0dip"
+                            android:layout_weight="2"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="17.0dip"
+                            android:text="记录:"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <EditText
+                            android:id="@+id/jilu6EditText"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="1.0dip"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_marginRight="1.0dip"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="17.0dip"
+                            android:text="复核:"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <EditText
+                            android:id="@+id/fuhe6EditText"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16sp" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="1.0dip"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:id="@+id/fuzhukengdaoRow"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:paddingLeft="1.0dip"
+                        android:paddingTop="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_marginRight="1.0dip"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="17.0dip"
+                            android:text="7．辅助坑道调查  "
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/fuzhukengdaoweizhi1Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingTop="1.0dip"
+                        android:paddingRight="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="9.0dip"
+                            android:singleLine="false"
+                            android:text="（1）辅助坑道位置与型式（平导、斜井、竖井）"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/fuzhukengdaoweizhi2Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <EditText
+                            android:id="@+id/fuzhukengdaoweizhiEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="120dp"
+                            android:layout_weight="7"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/fuzhukengdaoshigong1Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="9.0dip"
+                            android:singleLine="false"
+                            android:text="（2）辅助坑道施工条件（施工场地、便道等）"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/fuzhukengdaoshigong2Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <EditText
+                            android:id="@+id/fuzhukengdaoshigongEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="120dp"
+                            android:layout_weight="7"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/fuzhukengdaogaikuang1Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="9.0dip"
+                            android:singleLine="false"
+                            android:text="（3）辅助坑道地形、地貌、水土保持与植被及地质概况"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/fuzhukengdaogaikuang2Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <EditText
+                            android:id="@+id/fuzhukengdaogaikuangEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="120dp"
+                            android:layout_weight="7"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/jilu7Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:paddingLeft="1.0dip"
+                        android:paddingTop="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_marginRight="1.0dip"
+                            android:layout_weight="2"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="17.0dip"
+                            android:text="记录:"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <EditText
+                            android:id="@+id/jilu7EditText"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="1.0dip"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_marginRight="1.0dip"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="17.0dip"
+                            android:text="复核:"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <EditText
+                            android:id="@+id/fuhe7EditText"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16sp" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="1.0dip"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:paddingLeft="1.0dip"
+                        android:paddingTop="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_marginRight="1.0dip"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="17.0dip"
+                            android:text="8．设计中应注意的问题与建议"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/jianyiRow"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="@drawable/shape_et_bottom_line"
+                        android:paddingLeft="1.0dip"
+                        android:paddingTop="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <EditText
+                            android:id="@+id/jianyiEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="400dp"
+                            android:layout_marginRight="1.0dip"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16.0sp" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/jilu8Row"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:paddingLeft="1.0dip"
+                        android:paddingTop="1.0dip"
+                        android:paddingRight="1.0dip"
+                        android:paddingBottom="1.0dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_marginRight="1.0dip"
+                            android:layout_weight="2"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="17.0dip"
+                            android:text="记录:"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <EditText
+                            android:id="@+id/jilu8EditText"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="1.0dip"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dip"
+                            android:layout_marginRight="1.0dip"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="17.0dip"
+                            android:text="复核:"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <EditText
+                            android:id="@+id/fuhe8EditText"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="3"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:textColor="#ff888888"
+                            android:textSize="16sp" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/geo_surebutton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="保存" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+
+
+

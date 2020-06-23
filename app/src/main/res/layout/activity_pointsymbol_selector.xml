@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:fadingEdge="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#42A5F5"
+                android:padding="6.0dip"
+                android:text="点选择"
+                android:textSize="20.0sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dip"
+                    android:background="@drawable/border_line_while">
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:shrinkColumns="0"
+                        android:stretchColumns="0">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dip"
+                            android:text="点符号选择" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:shrinkColumns="0"
+                        android:stretchColumns="0">
+
+                        <ImageButton
+                            android:id="@+id/point_circle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/point_circle" />
+
+                        <ImageButton
+                            android:id="@+id/point_cross"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/point_cross" />
+
+                        <ImageButton
+                            android:id="@+id/point_diamond"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/point_diamond" />
+
+                        <ImageButton
+                            android:id="@+id/point_square"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/point_square" />
+
+                        <ImageButton
+                            android:id="@+id/point_triangle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/point_triangle" />
+
+                        <ImageButton
+                            android:id="@+id/point_x"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/point_x" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dip"
+                    android:background="@drawable/border_line_while">
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:shrinkColumns="0"
+                        android:stretchColumns="0">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dip"
+                            android:text="设置" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dip"
+                        android:shrinkColumns="0"
+                        android:stretchColumns="0">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_margin="10dip"
+                            android:gravity="center_vertical"
+                            android:text="颜色选择" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.flask.colorpicker.ColorPickerView
+                                android:id="@+id/point_color_picker_view"
+                                android:layout_width="300dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                app:alphaSlider="true"
+                                app:alphaSliderView="@+id/v_alpha_slider"
+                                app:density="12"
+                                app:lightnessSlider="true"
+                                app:lightnessSliderView="@+id/v_lightness_slider"
+                                app:wheelType="FLOWER" />
+
+                            <com.flask.colorpicker.slider.LightnessSlider
+                                android:id="@+id/v_lightness_slider"
+                                android:layout_width="300dp"
+                                android:layout_height="48dp" />
+
+                            <com.flask.colorpicker.slider.AlphaSlider
+                                android:id="@+id/v_alpha_slider"
+                                android:layout_width="300dp"
+                                android:layout_height="48dp" />
+
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:shrinkColumns="0"
+                        android:stretchColumns="0">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="68dp"
+                            android:layout_margin="10dip"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"
+                            android:text="大小设置" />
+
+                        <EditText
+                            android:id="@+id/size_input"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="10dip"
+                            android:layout_weight="5"
+                            android:background="@drawable/border_line_white"
+                            android:gravity="center_vertical"
+                            android:inputType="number|numberDecimal"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/point_surebutton"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/border_line_while"
+                android:gravity="center"
+                android:text="确定" />
+
+            <Button
+                android:id="@+id/point_cancelbutton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:background="@drawable/border_line_while"
+                android:text="取消" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+
+
+
